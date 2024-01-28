@@ -4,7 +4,7 @@ import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
   padding: 0.8rem;
-  background-color: ${theme.backgroundColor};
+  background-color: white;
   border: 1px solid ${theme.borderColor};
   border-radius: 0.5rem;
 
@@ -24,7 +24,7 @@ export const Input = styled.input`
   }
 
   &::placeholder{
-    color: #747474;
+    color: ${theme.grayColor};
   }
 `
 

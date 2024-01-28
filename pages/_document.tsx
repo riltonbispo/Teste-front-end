@@ -1,4 +1,3 @@
-
 import Document, {
   Html,
   Head,
@@ -7,7 +6,6 @@ import Document, {
   DocumentContext
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import Navigation from '../components/Navigation'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -41,7 +39,6 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head />
         <body>
-          <Navigation/>
           <Main />
           <NextScript />
         </body>
