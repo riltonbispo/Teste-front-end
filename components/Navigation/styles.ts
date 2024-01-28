@@ -10,7 +10,7 @@ export const Container = styled.header`
 export const Content = styled.nav`
   width: 90%;
   max-width: 1100px;
-  padding-block: 2rem;
+  padding-block: 0.8rem;
   margin-inline: auto;
   display: flex;
   flex-wrap: wrap;
