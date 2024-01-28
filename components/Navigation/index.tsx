@@ -3,6 +3,7 @@ import logo from '../../public/favicon.ico'
 import Image from 'next/image'
 import * as S from './styles'
 import Button from '../Button'
+import Link from 'next/link'
 
 const Navigation = () => {
   return (
@@ -14,10 +15,14 @@ const Navigation = () => {
         </S.CTA>
         <S.Links>
           <li>
-            <a href=""><Button variant='ghost'>Quem Somos</Button></a>
+            <Link href="/about">
+              <Button variant='ghost'>Quem Somos</Button>
+            </Link>
           </li>
           <li>
-            <a href=""><Button variant='primary'>Agendar Consulta</Button></a>
+            <Link href='/form'>
+              <Button variant='primary'>Agendar Consulta</Button>
+            </Link>
           </li>
         </S.Links>
       </S.Content>

@@ -34,10 +34,11 @@ export const CTA = styled.button`
   border-radius: 3.125rem;
 
   & span {
+    font-weight: 600;
     display: none;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s linear;
   }
 
   &:hover {
@@ -54,4 +55,5 @@ export const CTA = styled.button`
 export const Links = styled.ul`
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 `
