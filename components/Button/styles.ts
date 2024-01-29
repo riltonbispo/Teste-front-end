@@ -2,12 +2,9 @@ import { darken } from "polished";
 
 import styled, { css } from "styled-components";
 import { theme } from "../../styles/theme";
+import { ButtonProps } from "./index";
 
-type ButtonStyleProps = {
-  variant: 'primary' | 'ghost'
-}
-
-export const Button = styled.button<ButtonStyleProps>`
+export const Button = styled.button<ButtonProps>`
   border: none;
   background-color: transparent;
   padding: 0.8rem 1.5rem;
@@ -26,5 +23,10 @@ export const Button = styled.button<ButtonStyleProps>`
     &:hover{
       background-color: ${darken(0.08, theme.primaryColor)}
     }
+  `}
+
+  ${(props) => props.variant == 'secondary' && css`
+    font-weight: 700;
+    border: 1px solid ${theme.darkColor};
   `}
 ` 
