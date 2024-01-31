@@ -9,7 +9,7 @@ const Select = ({label, ...props}: SelectProps) => {
   return (
     <>
       <S.Label>{label}</S.Label>
-      <S.Select>
+      <S.Select onChange={props.onChange}>
         {props.children}
       </S.Select>
     </>

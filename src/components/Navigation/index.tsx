@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../public/favicon.ico'
+import logo from '../../../public/favicon.ico'
 import Image from 'next/image'
 import * as S from './styles'
 import Button from '../Button'

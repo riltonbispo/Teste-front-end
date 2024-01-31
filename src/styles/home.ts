@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imageHero from '../public/images/pokemon-hero.jpg'
+import imageHero from '../../public/images/pokemon-hero.jpg'
 
 export const Container = styled.main`
   width: 100vw;
